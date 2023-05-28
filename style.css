@@ -11,6 +11,12 @@ html {
 body {
   font-family: "Barlow Semi Condensed", sans-serif;
   background-color: var(--clr-background-2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
 }
 
 :root {
