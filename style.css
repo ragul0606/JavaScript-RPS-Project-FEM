@@ -9,6 +9,7 @@ html {
 }
 
 body {
+  width: 100%;
   font-family: "Barlow Semi Condensed", sans-serif;
   background-color: var(--clr-background-2);
   display: flex;
@@ -31,4 +32,133 @@ body {
   --clr-header-outline: hsl(217, 16%, 45%);
   --clr-background-1: hsl(214, 47%, 23%);
   --clr-background-2: hsl(237, 49%, 15%);
+}
+
+.box-1 {
+  /* width: 80%; */
+  width: 22rem;
+  height: 6rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid var(--clr-header-outline);
+  margin-top: 1.5rem;
+  border-radius: 0.5rem;
+}
+
+.rps-img {
+  width: 6rem;
+  height: auto;
+  margin-left: 0.5rem;
+}
+
+.score-card {
+  display: flex;
+  flex-direction: column;
+  margin-right: 0.5rem;
+  padding: 0.75rem 1.75rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
+}
+
+.score {
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: var(--clr-dark-text);
+}
+
+.number {
+  font-size: 1.75rem;
+  color: var(--clr-dark-text);
+}
+
+.box-2 {
+  width: 90%;
+  overflow: hidden;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.weapons-1,
+.weapons-2,
+.weapons-3 {
+  color: var(--clr-dark-text);
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 50%;
+  width: 8rem;
+  height: 8rem;
+}
+
+.weapons-1 {
+  border: 1rem solid rgb(212, 0, 64);
+  box-shadow: 2px 4px 6px rgb(134, 0, 40);
+}
+
+.weapons-2 {
+  border: 1rem solid var(--clr-paper-gradient-2);
+  box-shadow: 2px 4px 2px var(--clr-paper-gradient-1);
+}
+
+.weapons-3 {
+  border: 1rem solid var(--clr-scissors-gradient-2);
+  box-shadow: 2px 4px 2px var(--clr-scissors-gradient-1);
+}
+
+.box-3 {
+  width: 100%;
+  height: auto;
+  margin-bottom: 2rem;
+}
+
+.rules-box {
+  padding: 1rem 2rem;
+  border-radius: 0.25rem;
+  border: 2px solid var(--clr-header-outline);
+  float: right;
+  margin-right: 10%;
+  background-color: transparent;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.05rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 576px) {
+}
+
+/* Medium devices (tablets) */
+
+@media (min-width: 768px) {
+}
+
+/* Large devices (desktops) */
+
+@media (min-width: 991px) {
+  .box-1 {
+    width: 60%;
+  }
+
+  .box-2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+  }
+
+  .box-3 {
+    margin-right: 18rem;
+    margin-bottom: 2rem;
+  }
+}
+
+/* Extra large devices (large desktops) */
+
+@media (min-width: 1200px) {
 }
